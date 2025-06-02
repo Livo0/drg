@@ -55,7 +55,7 @@ export default function Dashboard() {
   }, []);
 
   if (loading) {
-    return <div className="text-center py-12">Loading dashboard data...</div>;
+    return <div className="text-center py-12 text-black-100">Loading dashboard data...</div>;
   }
 
   return (

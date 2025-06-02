@@ -91,7 +91,7 @@ export default function NewEventPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">Create New Event</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">Create New Event</h1>
       
       <Card className="max-w-2xl mx-auto">
         {errors.form && (
