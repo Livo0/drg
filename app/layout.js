@@ -9,16 +9,16 @@ export const metadata = {
   description: 'Manage game events, participants, and points',
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex min-h-screen bg-gray-100">
+        <div className="flex flex-col md:flex-row min-h-screen bg-gray-100">
           <Navbar />
-         <main className="flex-1 p-4 md:p-8 md:ml-0 md:ml-64">
-  {children}
-</main>
-
+          {/* Add padding-top on mobile for the fixed header */}
+          <main className="flex-1 p-4 md:p-8 pt-16 md:pt-4 w-full">
+            {children}
+          </main>
         </div>
       </body>
     </html>
