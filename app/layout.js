@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Game Champions Dashboard',
+  title: 'Dragons Lair',
   description: 'Manage game events, participants, and points',
 };
 
