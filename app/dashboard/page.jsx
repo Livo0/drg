@@ -60,7 +60,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6 text-black-700">Dashboard</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">Dashboard</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <Card className="bg-blue-50 border border-blue-100">
