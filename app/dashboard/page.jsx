@@ -60,7 +60,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black-700">Dashboard</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <Card className="bg-blue-50 border border-blue-100">
@@ -70,7 +70,7 @@ export default function Dashboard() {
             </div>
             <div>
               <p className="text-sm text-gray-600">Total Events</p>
-              <p className="text-2xl font-bold">{stats.totalEvents}</p>
+              <p className="text-2xl font-bold text-black">{stats.totalEvents}</p>
             </div>
           </div>
         </Card>
@@ -82,7 +82,7 @@ export default function Dashboard() {
             </div>
             <div>
               <p className="text-sm text-gray-600">Active Events</p>
-              <p className="text-2xl font-bold">{stats.activeEvents}</p>
+              <p className="text-2xl font-bold text-black">{stats.activeEvents}</p>
             </div>
           </div>
         </Card>
@@ -94,7 +94,7 @@ export default function Dashboard() {
             </div>
             <div>
               <p className="text-sm text-gray-600">Total Participants</p>
-              <p className="text-2xl font-bold">{stats.totalParticipants}</p>
+              <p className="text-2xl font-bold text-black">{stats.totalParticipants}</p>
             </div>
           </div>
         </Card>
@@ -113,7 +113,7 @@ export default function Dashboard() {
                       <TrophyIcon className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="font-medium">
+                      <p className="font-medium text-black-100">
                         {point.participant.username} earned {point.points} points
                       </p>
                       <p className="text-sm text-gray-500">
@@ -137,8 +137,8 @@ export default function Dashboard() {
                 <CalendarIcon className="h-5 w-5" />
               </div>
               <div>
-                <p className="font-medium">Create New Event</p>
-                <p className="text-sm text-gray-500">Set up a new game event</p>
+                <p className="font-medium text-gray-400">Create New Event</p>
+                <p className="text-sm text-black-500">Set up a new game event</p>
               </div>
             </Link>
             
@@ -150,8 +150,8 @@ export default function Dashboard() {
                 <UsersIcon className="h-5 w-5" />
               </div>
               <div>
-                <p className="font-medium">Add New Participant</p>
-                <p className="text-sm text-gray-500">Register a new participant</p>
+                <p className="font-medium text-gray-400">Add New Participant</p>
+                <p className="text-sm text-black-500">Register a new participant</p>
               </div>
             </Link>
             
@@ -163,8 +163,8 @@ export default function Dashboard() {
                 <ArrowTrendingUpIcon className="h-5 w-5" />
               </div>
               <div>
-                <p className="font-medium">View Leaderboard</p>
-                <p className="text-sm text-gray-500">See top performers</p>
+                <p className="font-medium text-gray-400">View Leaderboard</p>
+                <p className="text-sm text-black-500">See top performers</p>
               </div>
             </Link>
           </div>

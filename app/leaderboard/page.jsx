@@ -114,7 +114,7 @@ export default function LeaderboardPage() {
 
   return (
     <div className="pb-6">
-      <h1 className="text-2xl font-bold mb-6">Leaderboard</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">Leaderboard</h1>
       
       <div className="bg-white rounded-lg shadow mb-6 p-4">
         <div className="max-w-xs">
@@ -137,14 +137,14 @@ export default function LeaderboardPage() {
           {leaderboard.length === 0 ? (
             <Card>
               <div className="text-center py-8">
-                <p className="text-gray-500">
+                <p className="text-black-500">
                   No points data available for this event yet.
                 </p>
               </div>
             </Card>
           ) : (
             <>
-              <h2 className="text-xl font-semibold text-center mb-4">
+              <h2 className="text-xl text-black-100 font-semibold text-center mb-4">
                 {getEventName()} - Top Performers
               </h2>
               
@@ -163,8 +163,8 @@ export default function LeaderboardPage() {
                             <TrophyIcon className="h-10 w-10 text-yellow-600" />
                           </div>
                         </div>
-                        <h3 className="text-xl font-bold mb-1">{leaderboard[0].participant.username}</h3>
-                        <p className="text-gray-500 mb-3">
+                        <h3 className="text-xl font-bold mb-1 text-black">{leaderboard[0].participant.username}</h3>
+                        <p className="text-black-500 mb-3">
                           Tier: <Badge variant="primary">{leaderboard[0].participant.tier}</Badge>
                         </p>
                         <p className="text-3xl font-bold text-yellow-600">
